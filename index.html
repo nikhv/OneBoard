@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="icon" href="https://img.icons8.com/office/16/000000/class.png" type="image/x-icon">
+    <title>One Pad</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+   <div class="tool-container">
+       <div class="tool" id="pencil"><i class="fas fa-pencil-alt"></i></div>
+       <div class="formatting-tool">
+           <input type="range" id="pencil-line-width" class="line-width" min="5" max="20" value="2">
+           <div class="color-container">
+               <div class="color red" id="red" colorValue="red"></div>
+               <div class="color blue" id="blue" colorValue="blue"></div>
+               <div class="color green" colorValue="green"></div>
+            </div>
+       </div>
+       <div class="tool" id="eraser"><i class="fas fa-eraser"></i></div> 
+       <div class="eraser-formatting-tool">
+           <input type="range" id="eraser-line-width" class="line-width" min="5" max="20" value="2">
+       </div>
+       
+      
+       <div class="tool" id="zoom-in"><i class="fas fa-search-plus"></i></div>
+       <div class="tool" id="zoom-out"><i class="fas fa-search-minus"></i></div>
+       <div class="tool" id="undo"><i class="fas fa-undo"></i></div>
+       <div class="tool" id="redo"><i class="fas fa-redo"></i></div>
+       <a href="index.html" ><i class="fas fa-sync-alt"></i></a>
+    </div>
+   
+    <!-- Canvas Board -->
+    <canvas class="board-element" id="board"></canvas>
+    <script src="index.js"></script>
+</body>
+
+</html>
